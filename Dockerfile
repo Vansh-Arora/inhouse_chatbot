@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN pip install uvicorn
 
 # 6️⃣ Final command: start FastAPI backend AND Streamlit frontend together
-CMD ["sh", "-c", "uvicorn main:app --host 0.0.0.0 --port 8000 & streamlit run chatbot_ui.py --server.port 8501 --server.enableCORS false"]
+CMD ["streamlit", "run", "chatbot_ui.py", "--server.port", "10000", "--server.enableCORS", "false"]
