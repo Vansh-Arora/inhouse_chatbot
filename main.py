@@ -8,7 +8,6 @@ app = FastAPI()
 
 # Load Together API key from environment
 TOGETHER_API_KEY = os.getenv("TOGETHER_API_KEY")
-# TOGETHER_API_KEY = '4ad46d352e8cc4be86e2285c7dabcfddc1eb95f706bc739d7f7bf9a9dcc3dc11'
 TOGETHER_API_URL = "https://api.together.xyz/v1/chat/completions"
 
 # Barclays-grade redaction patterns
